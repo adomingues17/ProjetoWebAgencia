@@ -533,3 +533,4 @@ C:\Users\Domingues\Documents\ProjetoFinalV7\ProjetoFinal-main\SistemaWebAgenciaV
 C:\Users\Domingues\Documents\ProjetoFinalV7\ProjetoFinal-main\SistemaWebAgenciaViagens\ProjetoFInal\obj\Debug\net8.0\ProjetoFinal.pdb
 C:\Users\Domingues\Documents\ProjetoFinalV7\ProjetoFinal-main\SistemaWebAgenciaViagens\ProjetoFInal\obj\Debug\net8.0\ProjetoFinal.genruntimeconfig.cache
 C:\Users\Domingues\Documents\ProjetoFinalV7\ProjetoFinal-main\SistemaWebAgenciaViagens\ProjetoFInal\obj\Debug\net8.0\ref\ProjetoFinal.dll
+C:\Users\Domingues\Documents\ProjetoFinalV7\ProjetoFinal-main\SistemaWebAgenciaViagens\ProjetoFInal\obj\Debug\net8.0\ProjetoFinal.sourcelink.json

@@ -9,12 +9,14 @@ public class Local
     public int IdLocal { get; set; }
 
     [Required(ErrorMessage = "Campo nome é obrigatório.")]
+    [Display(Name =  "Pacote")]
     public string? Nome { get; set; }
 
     [Required(ErrorMessage = "Campo descrição é obrigatório.")]
     public string? Descricao { get; set; }
 
     [Required(ErrorMessage = "Campo endereço é obrigatório.")]
+    [Display(Name = "Opções de lazer.")]
     public string? Endereco { get; set; }
 
     [Required(ErrorMessage = "O preço por noite é obrigatório.")]

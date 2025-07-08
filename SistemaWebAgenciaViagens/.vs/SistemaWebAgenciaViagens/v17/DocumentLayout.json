@@ -5,18 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3337AB3A-6270-4610-A02A-05DB093E9241}|ProjetoFInal\\ProjetoFinal.csproj|c:\\users\\domingues\\documents\\projetofinalv7\\projetofinal-main\\sistemawebagenciaviagens\\projetofinal\\views\\reservas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3337AB3A-6270-4610-A02A-05DB093E9241}|ProjetoFInal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\views\\reservas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3337AB3A-6270-4610-A02A-05DB093E9241}|ProjetoFInal\\ProjetoFinal.csproj|c:\\users\\domingues\\documents\\projetofinalv7\\projetofinal-main\\sistemawebagenciaviagens\\projetofinal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3337AB3A-6270-4610-A02A-05DB093E9241}|ProjetoFInal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3337AB3A-6270-4610-A02A-05DB093E9241}|ProjetoFInal\\ProjetoFinal.csproj|c:\\users\\domingues\\documents\\projetofinalv7\\projetofinal-main\\sistemawebagenciaviagens\\projetofinal\\controllers\\localscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3337AB3A-6270-4610-A02A-05DB093E9241}|ProjetoFInal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\controllers\\localscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3337AB3A-6270-4610-A02A-05DB093E9241}|ProjetoFInal\\ProjetoFinal.csproj|c:\\users\\domingues\\documents\\projetofinalv7\\projetofinal-main\\sistemawebagenciaviagens\\projetofinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{3337AB3A-6270-4610-A02A-05DB093E9241}|ProjetoFInal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,47 +14,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LocalsController.cs",
-              "DocumentMoniker": "C:\\Users\\Domingues\\Documents\\ProjetoFinalV7\\ProjetoFinal-main\\SistemaWebAgenciaViagens\\ProjetoFInal\\Controllers\\LocalsController.cs",
-              "RelativeDocumentMoniker": "ProjetoFInal\\Controllers\\LocalsController.cs",
-              "ToolTip": "C:\\Users\\Domingues\\Documents\\ProjetoFinalV7\\ProjetoFinal-main\\SistemaWebAgenciaViagens\\ProjetoFInal\\Controllers\\LocalsController.cs",
-              "RelativeToolTip": "ProjetoFInal\\Controllers\\LocalsController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAAADwAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T02:44:48.004Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "bootstrap.css",
-              "DocumentMoniker": "C:\\Users\\Domingues\\Documents\\ProjetoFinalV7\\ProjetoFinal-main\\SistemaWebAgenciaViagens\\ProjetoFInal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "RelativeDocumentMoniker": "ProjetoFInal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "ToolTip": "C:\\Users\\Domingues\\Documents\\ProjetoFinalV7\\ProjetoFinal-main\\SistemaWebAgenciaViagens\\ProjetoFInal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "RelativeToolTip": "ProjetoFInal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "ViewState": "AgIAALc2AAAAAAAAAAAIwMc2AAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-07-07T02:27:11.777Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Domingues\\Documents\\ProjetoFinalV7\\ProjetoFinal-main\\SistemaWebAgenciaViagens\\ProjetoFInal\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "ProjetoFInal\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Domingues\\Documents\\ProjetoFinalV7\\ProjetoFinal-main\\SistemaWebAgenciaViagens\\ProjetoFInal\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "ProjetoFInal\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-07T02:26:37.704Z"
             },
             {
               "$type": "Document",
@@ -76,9 +28,9 @@
               "RelativeDocumentMoniker": "ProjetoFInal\\Views\\Reservas\\Create.cshtml",
               "ToolTip": "C:\\Users\\Domingues\\Documents\\ProjetoFinalV7\\ProjetoFinal-main\\SistemaWebAgenciaViagens\\ProjetoFInal\\Views\\Reservas\\Create.cshtml",
               "RelativeToolTip": "ProjetoFInal\\Views\\Reservas\\Create.cshtml",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAACwAAACDAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAEoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-07T01:33:13.899Z",
+              "WhenOpened": "2025-07-07T22:32:02.46Z",
               "EditorCaption": ""
             }
           ]
