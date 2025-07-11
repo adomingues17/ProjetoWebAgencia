@@ -46,156 +46,62 @@ public class LocalsController : Controller
         return View();
     }
 
-    // POST: Locals/Create
-    // To protect from overposting attacks, enable the specific properties you want to bind to.
-    // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("IdLocal,Nome,Descricao,Endereco,PrecoPorNoite")] Local local, IFormFile? imagemFile, IFormFile? imagemFile2, IFormFile? imagemFile3, IFormFile? imagemFile4, IFormFile? imagemFile5, IFormFile? imagemFile6)
+    public async Task<IActionResult> Create([Bind("IdLocal,Nome,Descricao,Endereco,PrecoPorNoite")] Local local, IFormFile[]? imagensFile, string[] descricaoImagens)
     {
         if (ModelState.IsValid)
         {
-            if (imagemFile != null && imagemFile.Length > 0)
+            // Verifica se o usuário enviou imagens
+            if (imagensFile != null && imagensFile.Length > 0)
             {
-                // Define o caminho para salvar a imagem
-                var uploadsDir = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imagens_locais");
-                if (!Directory.Exists(uploadsDir))
+                // Cria a lista de imagens (Fotos) que será associada ao local
+                local.Imagem = new List<Foto>();
+
+                for (int i = 0; i < imagensFile.Length; i++)
                 {
-                    Directory.CreateDirectory(uploadsDir);
+                    var ArquivoImagens = imagensFile[i];
+                    var descricao = descricaoImagens.Length > i ? descricaoImagens[i] : "Descrição padrão"; // Verifica se há descrição para a imagem
+
+                    // Define o caminho para salvar a imagem
+                    var uploadsDir = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imagens_locais");
+                    if (!Directory.Exists(uploadsDir))
+                    {
+                        Directory.CreateDirectory(uploadsDir);
+                    }
+
+                    // Cria um nome de arquivo único para evitar conflitos
+                    var fileName = Guid.NewGuid().ToString() + Path.GetExtension(ArquivoImagens.FileName);
+                    var filePath = Path.Combine(uploadsDir, fileName);
+
+                    // Salva o arquivo no disco
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ArquivoImagens.CopyToAsync(fileStream);
+                    }
+
+                    // Cria um objeto Foto e adiciona à lista de imagens
+                    var foto = new Foto
+                    {
+                        Imagem = "/imagens_locais/" + fileName, // Caminho relativo da imagem
+                        Descricao = descricao // A descrição associada à imagem
+                    };
+
+                    // Adiciona a foto à lista de imagens do local
+                    local.Imagem.Add(foto);
                 }
-
-                // Cria um nome de arquivo único para evitar conflitos
-                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(imagemFile.FileName);
-                var filePath = Path.Combine(uploadsDir, fileName);
-
-                // Salva o arquivo no disco
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    await imagemFile.CopyToAsync(fileStream);
-                }
-
-                // Salva o caminho do arquivo no modelo
-                local.ImagemUrl = "/imagens_locais/" + fileName;
             }
-            //2
-            if (imagemFile2 != null && imagemFile2.Length > 0)
-            {
-                // Define o caminho para salvar a imagem
-                var uploadsDir = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imagens_locais");
-                if (!Directory.Exists(uploadsDir))
-                {
-                    Directory.CreateDirectory(uploadsDir);
-                }
 
-                // Cria um nome de arquivo único para evitar conflitos
-                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(imagemFile2.FileName);
-                var filePath = Path.Combine(uploadsDir, fileName);
+            // Adiciona o local ao contexto e salva as alterações no banco de dados
+            _context.Add(local);
+            await _context.SaveChangesAsync();
 
-                // Salva o arquivo no disco
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    await imagemFile2.CopyToAsync(fileStream);
-                }
-
-                // Salva o caminho do arquivo no modelo
-                local.ImagemUrl2 = "/imagens_locais/" + fileName;
-            }
-            //3
-            if (imagemFile3 != null && imagemFile3.Length > 0)
-            {
-                // Define o caminho para salvar a imagem
-                var uploadsDir = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imagens_locais");
-                if (!Directory.Exists(uploadsDir))
-                {
-                    Directory.CreateDirectory(uploadsDir);
-                }
-
-                // Cria um nome de arquivo único para evitar conflitos
-                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(imagemFile3.FileName);
-                var filePath = Path.Combine(uploadsDir, fileName);
-
-                // Salva o arquivo no disco
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    await imagemFile3.CopyToAsync(fileStream);
-                }
-
-                // Salva o caminho do arquivo no modelo
-                local.ImagemUrl3 = "/imagens_locais/" + fileName;
-            }
-            //4
-            if (imagemFile4 != null && imagemFile4.Length > 0)
-            {
-                // Define o caminho para salvar a imagem
-                var uploadsDir = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imagens_locais");
-                if (!Directory.Exists(uploadsDir))
-                {
-                    Directory.CreateDirectory(uploadsDir);
-                }
-
-                // Cria um nome de arquivo único para evitar conflitos
-                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(imagemFile4.FileName);
-                var filePath = Path.Combine(uploadsDir, fileName);
-
-                // Salva o arquivo no disco
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    await imagemFile4.CopyToAsync(fileStream);
-                }
-
-                // Salva o caminho do arquivo no modelo
-                local.ImagemUrl4 = "/imagens_locais/" + fileName;
-            }
-            //5
-            if (imagemFile5 != null && imagemFile5.Length > 0)
-            {
-                // Define o caminho para salvar a imagem
-                var uploadsDir = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imagens_locais");
-                if (!Directory.Exists(uploadsDir))
-                {
-                    Directory.CreateDirectory(uploadsDir);
-                }
-
-                // Cria um nome de arquivo único para evitar conflitos
-                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(imagemFile5.FileName);
-                var filePath = Path.Combine(uploadsDir, fileName);
-
-                // Salva o arquivo no disco
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    await imagemFile5.CopyToAsync(fileStream);
-                }
-
-                // Salva o caminho do arquivo no modelo
-                local.ImagemUrl5 = "/imagens_locais/" + fileName;
-            }
-            //6
-            if (imagemFile6 != null && imagemFile6.Length > 0)
-            {
-                // Define o caminho para salvar a imagem
-                var uploadsDir = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imagens_locais");
-                if (!Directory.Exists(uploadsDir))
-                {
-                    Directory.CreateDirectory(uploadsDir);
-                }
-
-                // Cria um nome de arquivo único para evitar conflitos
-                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(imagemFile6.FileName);
-                var filePath = Path.Combine(uploadsDir, fileName);
-
-                // Salva o arquivo no disco
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    await imagemFile6.CopyToAsync(fileStream);
-                }
-
-                // Salva o caminho do arquivo no modelo
-                local.ImagemUrl6 = "/imagens_locais/" + fileName;
-            }
+            // Redireciona para a página inicial ou outra página de sua escolha
+            return RedirectToAction(nameof(Index));
         }
-        _context.Add(local);
-        await _context.SaveChangesAsync();
-        return RedirectToAction(nameof(Index));
+
+        // Caso o ModelState não seja válido, você pode retornar a visão novamente com os dados já preenchidos
+        return View(local);
     }
 
     // GET: Locals/Edit/5

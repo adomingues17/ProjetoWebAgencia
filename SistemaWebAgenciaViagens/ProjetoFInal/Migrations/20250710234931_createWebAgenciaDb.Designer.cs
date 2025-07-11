@@ -12,8 +12,8 @@ using ProjetoFinal.Data;
 namespace ProjetoFinal.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250707031116_createWebDb")]
-    partial class createWebDb
+    [Migration("20250710234931_createWebAgenciaDb")]
+    partial class createWebAgenciaDb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -227,6 +227,30 @@ namespace ProjetoFinal.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("ProjetoFinal.Models.Foto", b =>
+                {
+                    b.Property<int>("IdFoto")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdFoto"));
+
+                    b.Property<string>("Descricao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Imagem")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("LocalIdLocal")
+                        .HasColumnType("int");
+
+                    b.HasKey("IdFoto");
+
+                    b.HasIndex("LocalIdLocal");
+
+                    b.ToTable("Fotos");
+                });
+
             modelBuilder.Entity("ProjetoFinal.Models.Local", b =>
                 {
                     b.Property<int>("IdLocal")
@@ -241,24 +265,6 @@ namespace ProjetoFinal.Migrations
 
                     b.Property<string>("Endereco")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImagemUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImagemUrl2")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImagemUrl3")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImagemUrl4")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImagemUrl5")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImagemUrl6")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
@@ -357,6 +363,13 @@ namespace ProjetoFinal.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("ProjetoFinal.Models.Foto", b =>
+                {
+                    b.HasOne("ProjetoFinal.Models.Local", null)
+                        .WithMany("Imagem")
+                        .HasForeignKey("LocalIdLocal");
+                });
+
             modelBuilder.Entity("ProjetoFinal.Models.Reserva", b =>
                 {
                     b.HasOne("ProjetoFinal.Models.Local", "Local")
@@ -374,6 +387,11 @@ namespace ProjetoFinal.Migrations
                     b.Navigation("Local");
 
                     b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("ProjetoFinal.Models.Local", b =>
+                {
+                    b.Navigation("Imagem");
                 });
 #pragma warning restore 612, 618
         }

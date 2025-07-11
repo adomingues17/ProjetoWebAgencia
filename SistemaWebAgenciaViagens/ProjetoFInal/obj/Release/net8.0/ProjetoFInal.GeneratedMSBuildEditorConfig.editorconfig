@@ -1,0 +1,109 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProjetoFInal
+build_property.RootNamespace = ProjetoFInal
+build_property.ProjectDir = C:\Users\Domingues\Documents\ProjetoFinalV7\ProjetoFinal-main\SistemaWebAgenciaViagens\ProjetoFInal\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Domingues\Documents\ProjetoFinalV7\ProjetoFinal-main\SistemaWebAgenciaViagens\ProjetoFInal
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/Locals/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/Locals/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/Locals/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/Locals/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/Locals/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/Reservas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/Reservas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/Reservas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/Reservas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/Reservas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/Reservas/Sucesso.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNcU3VjZXNzby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Domingues/Documents/ProjetoFinalV7/ProjetoFinal-main/SistemaWebAgenciaViagens/ProjetoFInal/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-fvxhu743h9

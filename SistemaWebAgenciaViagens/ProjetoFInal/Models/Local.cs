@@ -9,7 +9,7 @@ public class Local
     public int IdLocal { get; set; }
 
     [Required(ErrorMessage = "Campo nome é obrigatório.")]
-    [Display(Name =  "Pacote")]
+    [Display(Name = "Pacote")]
     public string? Nome { get; set; }
 
     [Required(ErrorMessage = "Campo descrição é obrigatório.")]
@@ -23,12 +23,5 @@ public class Local
     [Display(Name = "Preço por noite.")]
     [Column(TypeName = "decimal(18,2)")]
     public decimal PrecoPorNoite { get; set; }
-
-    public string? ImagemUrl { get; set; }
-    public string? ImagemUrl2 { get; set; }
-    public string? ImagemUrl3 { get; set; }
-    public string? ImagemUrl4 { get; set; }
-    public string? ImagemUrl5 { get; set; }
-    public string? ImagemUrl6 { get; set; }
-
+    public List<Foto>? Imagem { get; set; }
 }

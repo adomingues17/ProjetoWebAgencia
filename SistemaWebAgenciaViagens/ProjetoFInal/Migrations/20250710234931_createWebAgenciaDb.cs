@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ProjetoFinal.Migrations
 {
     /// <inheritdoc />
-    public partial class createWebDb : Migration
+    public partial class createWebAgenciaDb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -59,13 +59,7 @@ namespace ProjetoFinal.Migrations
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Descricao = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Endereco = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PrecoPorNoite = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    ImagemUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ImagemUrl2 = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ImagemUrl3 = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ImagemUrl4 = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ImagemUrl5 = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ImagemUrl6 = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    PrecoPorNoite = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -179,6 +173,26 @@ namespace ProjetoFinal.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Fotos",
+                columns: table => new
+                {
+                    IdFoto = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Imagem = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Descricao = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LocalIdLocal = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Fotos", x => x.IdFoto);
+                    table.ForeignKey(
+                        name: "FK_Fotos_Locals_LocalIdLocal",
+                        column: x => x.LocalIdLocal,
+                        principalTable: "Locals",
+                        principalColumn: "IdLocal");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Reservas",
                 columns: table => new
                 {
@@ -247,6 +261,11 @@ namespace ProjetoFinal.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Fotos_LocalIdLocal",
+                table: "Fotos",
+                column: "LocalIdLocal");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Reservas_LocalId",
                 table: "Reservas",
                 column: "LocalId");
@@ -274,6 +293,9 @@ namespace ProjetoFinal.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "Fotos");
 
             migrationBuilder.DropTable(
                 name: "Reservas");

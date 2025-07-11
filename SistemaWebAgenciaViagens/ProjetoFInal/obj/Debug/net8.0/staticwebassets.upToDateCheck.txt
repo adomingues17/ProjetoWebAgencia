@@ -7,6 +7,7 @@ wwwroot\imagens_locais\09046893-cdbd-410b-8b5e-45f82e44d7cf.jpg
 wwwroot\imagens_locais\0b267468-acdc-4132-bd3e-bf624bd31fcb.jpg
 wwwroot\imagens_locais\1cf41834-1b3c-4564-b511-8b115725c37f.jpg
 wwwroot\imagens_locais\1d60b234-f952-4195-99f4-4e67dbcc6f3b.jpg
+wwwroot\imagens_locais\262feb3b-bf12-4404-b345-33844c1e0a8b.jpg
 wwwroot\imagens_locais\26c49cd4-9a33-4400-8974-4051938248b9.jpg
 wwwroot\imagens_locais\2b1fd4d7-4990-4ebb-8e27-5dd3936d8e2c.jpg
 wwwroot\imagens_locais\3aea5a7e-1176-4aa3-bb05-fc10dfffc1fb.jpg
@@ -21,12 +22,15 @@ wwwroot\imagens_locais\6f23a4ab-7e39-4352-ae2d-1b7b365dab80.jpg
 wwwroot\imagens_locais\6f664e77-bd38-45cd-92e7-fabab88e85f3.png
 wwwroot\imagens_locais\728e54be-2b31-4863-8df4-4c3e262c30cd.jpg
 wwwroot\imagens_locais\808296f3-2a62-4fe1-b809-9669a3f85b55.png
+wwwroot\imagens_locais\89f62c36-8e66-4a09-a60f-a72f90aa8748.jpg
 wwwroot\imagens_locais\8f387d4b-e0cd-4a5e-ab45-fa4bfd979985.jpg
 wwwroot\imagens_locais\92f71c87-bacf-4746-a8e4-ceb5410d11bb.png
 wwwroot\imagens_locais\97ef8fdc-f979-4d7e-aeae-7d89caae833c.jpg
 wwwroot\imagens_locais\99ac3a5e-9286-44d8-b611-3ff137026efd.jpg
+wwwroot\imagens_locais\9eecbd5d-566d-4a91-a1b2-7bb7573b79bc.jpg
 wwwroot\imagens_locais\a483f56b-b564-4954-a9c7-11f3e1909943.jpg
 wwwroot\imagens_locais\a7732aa8-0831-480d-a63d-ccd8b5159e04.jpg
+wwwroot\imagens_locais\a78203d9-a0e6-47ab-8de5-54f3e82432e5.jpg
 wwwroot\imagens_locais\a96b5437-f41a-4571-9e1d-4f24833717f5.jpg
 wwwroot\imagens_locais\a9d07827-da45-46ad-9986-f8edf4c98c3d.jpg
 wwwroot\imagens_locais\b1e9cd6b-b02a-4d3e-9537-027aeaece485.jpg
@@ -36,11 +40,13 @@ wwwroot\imagens_locais\be19e451-f38b-4461-bcbb-b76b2536f2d0.jpg
 wwwroot\imagens_locais\c0529d31-b656-40dc-b66f-f6d822801f69.jpg
 wwwroot\imagens_locais\c32cc3f1-9c81-4f96-a59c-d2c57d76bcb1.png
 wwwroot\imagens_locais\cf855657-bc84-49be-be6f-e07f8edaddee.jpg
+wwwroot\imagens_locais\dcc9f9f3-466f-4ca7-b462-86f0ff96bd73.jpg
 wwwroot\imagens_locais\e9b137bb-5bf3-4d5e-94af-d24abf4b6b0d.jpg
 wwwroot\imagens_locais\f0378d9f-ce59-4472-a6ca-8edb3432eb01.jpg
 wwwroot\imagens_locais\f770b7ec-c687-41cc-84a9-9725ab479b84.png
 wwwroot\imagens_locais\fa4eb470-1234-4735-9713-552f840c8117.jpg
 wwwroot\imagens_locais\fc679a26-7b97-4e58-9e6c-f3b95b2a1a4a.jpg
+wwwroot\imagens_locais\fdb7be2b-7c60-4718-8589-2f5952249fe5.jpg
 wwwroot\imagens_locais\pexels-aleksandra-s-282932122-29909084.jpg
 wwwroot\imagens_locais\pexels-andreas-l-2004808-3626111.jpg
 wwwroot\imagens_locais\pexels-asadphoto-457882.jpg

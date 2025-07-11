@@ -12,5 +12,6 @@ namespace ProjetoFinal.Data
         }
         public DbSet<Local> Locals { get; set; } = default!;
         public DbSet<Reserva> Reservas { get; set; } = default!;
+        public DbSet<Foto> Fotos { get; set; } = default!;
     }
 }
